@@ -17,6 +17,9 @@
 		40E6528528673A6A00B49EB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6525B28673A6900B49EB8 /* ContentView.swift */; };
 		40E6528628673A6A00B49EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E6525C28673A6900B49EB8 /* Assets.xcassets */; };
 		40E6528728673A6A00B49EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E6525C28673A6900B49EB8 /* Assets.xcassets */; };
+		40E6529A28673EC400B49EB8 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6529928673EC400B49EB8 /* Coffee.swift */; };
+		40E6529C28673F2C00B49EB8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6529B28673F2C00B49EB8 /* Home.swift */; };
+		40E6529E28673F6900B49EB8 /* AppDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6529D28673F6900B49EB8 /* AppDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		40E6527A28673A6A00B49EB8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E6527E28673A6A00B49EB8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		40E6528028673A6A00B49EB8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		40E6529928673EC400B49EB8 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		40E6529B28673F2C00B49EB8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		40E6529D28673F6900B49EB8 /* AppDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataViewModel.swift; sourceTree = "<group>"; };
+		40E6529F286748AC00B49EB8 /* SwiftUI-DeepLinkApp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-DeepLinkApp--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +93,7 @@
 		40E6525428673A6800B49EB8 = {
 			isa = PBXGroup;
 			children = (
+				40E6529F286748AC00B49EB8 /* SwiftUI-DeepLinkApp--iOS--Info.plist */,
 				40E6525928673A6900B49EB8 /* Shared */,
 				40E6526828673A6A00B49EB8 /* macOS */,
 				40E6527128673A6A00B49EB8 /* Tests iOS */,
@@ -97,6 +105,9 @@
 		40E6525928673A6900B49EB8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				40E6529828673EA900B49EB8 /* ViewModel */,
+				40E6529728673EA300B49EB8 /* Model */,
+				40E6529628673E9D00B49EB8 /* View */,
 				40E6525A28673A6900B49EB8 /* SwiftUI_DeepLinkAppApp.swift */,
 				40E6525B28673A6900B49EB8 /* ContentView.swift */,
 				40E6525C28673A6900B49EB8 /* Assets.xcassets */,
@@ -139,6 +150,30 @@
 				40E6528028673A6A00B49EB8 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		40E6529628673E9D00B49EB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40E6529B28673F2C00B49EB8 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40E6529728673EA300B49EB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40E6529928673EC400B49EB8 /* Coffee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40E6529828673EA900B49EB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				40E6529D28673F6900B49EB8 /* AppDataViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +336,9 @@
 			files = (
 				40E6528428673A6A00B49EB8 /* ContentView.swift in Sources */,
 				40E6528228673A6A00B49EB8 /* SwiftUI_DeepLinkAppApp.swift in Sources */,
+				40E6529C28673F2C00B49EB8 /* Home.swift in Sources */,
+				40E6529A28673EC400B49EB8 /* Coffee.swift in Sources */,
+				40E6529E28673F6900B49EB8 /* AppDataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +505,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-DeepLinkApp--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,7 +522,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -496,6 +535,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-DeepLinkApp--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -512,7 +552,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
