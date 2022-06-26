@@ -1,3 +1,3 @@
 # SwiftUI_DeepLinkApp
 
-## SwiftUIを使って、NavigationLink(tag, selection) { } を使って特定のページへ遷移する簡単なDeeplink機能を実装
+## SwiftUIを使って、NavigationLink(tag, selection) { } を使ってタブの指定、かつ指定DetailPageへ遷移する簡単なDeeplink機能を実装
